@@ -514,4 +514,113 @@ ul, li {
 .footer .footer_credit span b {
   color: #ed145b;
 }
+
+.video_intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem;
+}
+
+.video_intro h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+  color: #ed145b;
+  margin-bottom: 2rem;
+}
+
+.video_intro .video {
+  width: auto;
+  height: 60rem;
+}
+
+.meet_team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.meet_team .heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(0deg, #ed145b, #ff5ca3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.meet_team .team_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.meet_team .team_row .team_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 4rem;
+  margin-right: 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: .5rem;
+}
+
+.meet_team .team_row .team_card:last-child {
+  margin-right: 0rem;
+}
+
+.meet_team .team_row .team_card img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ed145b), to(#ff5ca3));
+  background-image: linear-gradient(180deg, #ed145b, #ff5ca3);
+  padding: .65rem;
+}
+
+.meet_team .team_row .team_card h2 {
+  font-size: 1.8rem;
+  color: #df4a7b;
+}
+
+.meet_team .team_row .team_card h3 {
+  font-size: 2.4rem;
+  color: #ed145b;
+}
+
+.meet_team .team_row .team_card p {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.8);
+}
 /*# sourceMappingURL=style.css.map */

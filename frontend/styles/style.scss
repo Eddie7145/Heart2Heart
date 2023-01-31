@@ -7,6 +7,7 @@ $hot-pink: #ed145b;
 $hot-pink-accent: #df4a7b;
 $light-pink-variant: #f7f5dd;
 
+// Home Section
 .header {
   display: flex;
   height: fit-content;
@@ -258,54 +259,127 @@ $light-pink-variant: #f7f5dd;
   width: 100%;
   flex-direction: column;
 
-  .waves{
+  .waves {
     display: flex;
     width: 100%;
     position: relative;
-    #overlap{
+    #overlap {
       position: absolute;
-     }
+    }
   }
-  .footer_content{
+  .footer_content {
     background-color: $hot-pink;
     display: flex;
     justify-content: space-around;
     padding: 4rem;
     padding-bottom: 10rem;
-    .links{
+    .links {
       color: white;
-      h2{
+      h2 {
         margin-bottom: 1rem;
         font-size: 3rem;
         letter-spacing: 0.1em;
       }
-      li{
+      li {
         font-size: 2rem;
         font-weight: lighter;
       }
     }
   }
-  .footer_credit{
+  .footer_credit {
     display: flex;
     justify-content: space-evenly;
     height: 10rem;
     background-color: $light-pink;
-    img{
+    img {
       height: inherit;
       width: auto;
     }
-    span{
+    span {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
       color: rgba(0, 0, 0, 0.781);
       letter-spacing: 0.1rem;
-      b{
+      b {
         color: $hot-pink;
       }
     }
   }
- 
- 
+}
+
+// About Section
+.video_intro {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 4rem;
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: $hot-pink;
+    margin-bottom: 2rem;
+  }
+  .video {
+    width: auto;
+    height: 60rem;
+  }
+}
+.meet_team {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  .heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(0deg, #ed145b, #ff5ca3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.1em;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .team_row {
+    display: flex;
+
+    .team_card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem;
+      margin-right: 2rem;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      border-radius: .5rem;
+
+      &:last-child {
+        margin-right: 0rem;
+      }
+
+      img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        background-image: linear-gradient(180deg, #ed145b, #ff5ca3);
+        padding: .65rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+        color: $hot-pink-accent;
+      }
+      h3 {
+        font-size: 2.4rem;
+        color: $hot-pink;
+      }
+      p {
+        font-size: 1.8rem;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
 }
