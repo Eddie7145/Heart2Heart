@@ -13,7 +13,6 @@ html {
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  padding-bottom: 5rem;
 
 
   @media only screen and (max-width: 62.5em) {
@@ -43,6 +42,8 @@ body {
   font-size: 1.5rem;
   line-height: 1.6;
   overflow-x: hidden;
+  // background-color: $light-pink-variant;
+
 }
 
 a {
