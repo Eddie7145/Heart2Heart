@@ -462,20 +462,43 @@ ul, li {
       justify-content: space-around;
   padding: 4rem;
   padding-bottom: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer_content .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer_content .socials i {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.footer .footer_content .socials i:last-child {
+  margin-bottom: 0rem;
 }
 
 .footer .footer_content .links {
   color: white;
+  padding: 5rem;
 }
 
 .footer .footer_content .links h2 {
   margin-bottom: 1rem;
-  font-size: 3rem;
-  letter-spacing: 0.1em;
+  font-size: 2.4rem;
 }
 
 .footer .footer_content .links li {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: lighter;
 }
 
@@ -534,7 +557,7 @@ ul, li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #ed145b;
   margin-bottom: 2rem;
 }
@@ -603,7 +626,7 @@ ul, li {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ed145b), to(#ff5ca3));
   background-image: linear-gradient(180deg, #ed145b, #ff5ca3);
   padding: .65rem;
@@ -622,5 +645,196 @@ ul, li {
 .meet_team .team_row .team_card p {
   font-size: 1.8rem;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+  padding: 6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.quote .quote_img {
+  overflow: hidden;
+  width: 40%;
+}
+
+.quote .quote_img img {
+  height: auto;
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.quote .quote_text {
+  width: 60%;
+  padding: 4rem;
+  background-color: #f7f5dd;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 1rem;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.quote .quote_text b {
+  color: #ed145b;
+  font-size: 1.5rem;
+  display: block;
+  float: right;
+}
+
+.send_message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.send_message h2 {
+  font-size: 3.5rem;
+  color: #ed145b;
+  font-family: "Raleway";
+  margin-bottom: 2rem;
+}
+
+.send_message input {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.452);
+  border-radius: .5rem;
+}
+
+.send_message textarea {
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.452);
+  border-radius: .5rem;
+}
+
+.send_message button {
+  padding: 2rem;
+  color: white;
+  border-radius: 0.5rem;
+  background-color: #ed145b;
+  font-size: 3rem;
+  width: 40%;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  display: block;
+}
+
+.donate_heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #ed145b;
+  letter-spacing: 0.01em;
+  margin-top: 5rem;
+  font-family: "Raleway";
+}
+
+.donate_here {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.donate_here .donate_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  padding: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.donate_here .donate_form input {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  width: 85%;
+  border: 1px solid rgba(0, 0, 0, 0.452);
+  border-radius: .5rem;
+}
+
+.donate_here .donate_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  padding: 4rem;
+}
+
+.donate_here .donate_img img {
+  width: 100%;
+  height: auto;
+}
+
+.donate_here button {
+  padding: 2rem;
+  color: white;
+  border-radius: 0.5rem;
+  background-color: #ed145b;
+  font-size: 3rem;
+  width: 70%;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
