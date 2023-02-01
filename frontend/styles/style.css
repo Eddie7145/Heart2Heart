@@ -431,6 +431,7 @@ ul, li {
 }
 
 .footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,6 +466,17 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer_content img{
+  position: absolute;
+  top: 20rem;
+  right: 10rem;
+  width: 15rem;
+}
+
+.footer_content img{
+  color: #ff5ca3;
 }
 
 .footer .footer_content .socials {
@@ -688,6 +700,11 @@ ul, li {
           transform: translateX(10%);
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.quote .quote_text p{
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .quote .quote_text b {
