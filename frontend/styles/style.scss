@@ -6,6 +6,7 @@ $light-pink: #f3dadc;
 $hot-pink: #ed145b;
 $hot-pink-accent: #df4a7b;
 $light-pink-variant: #f7f5dd;
+$paragraph-color: #56555f;
 
 // Home Section
 .header {
@@ -68,7 +69,16 @@ $light-pink-variant: #f7f5dd;
     color: white;
     min-width: fit-content;
     font-size: 1.5rem;
+    font-weight: 500;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .3s ease;
+    &:hover{
+      background-color: $pink;
+      color: $hot-pink;
+      font-weight: 700;
+      font-size: 1.5rem;
+      box-shadow: $hot-pink 0px 1px 5px;
+    }
   }
 }
 .hero {
@@ -227,6 +237,12 @@ $light-pink-variant: #f7f5dd;
       width: 70%;
       border: 1px solid rgba(0, 0, 0, 0.452);
       border-radius: 1rem;
+      transition: .3s ease;
+      color: $paragraph-color;
+      &:focus-visible{
+        box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
+                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+      }
     }
     button {
       margin-top: 2rem;
@@ -275,16 +291,31 @@ $light-pink-variant: #f7f5dd;
     padding: 4rem;
     padding-bottom: 10rem;
     align-items: center;
+    position: relative;
+    img{
+      position: absolute;
+      top: -10rem;
+      right: 10rem;
+      width: 15rem;
+    }
     .socials{
       display: flex;
       flex-direction: column;
-      i{
-        font-size: 2rem;
-        color: white;
-        margin-bottom: 2rem;
-        &:last-child{
-        margin-bottom: 0rem;
-  
+      a{
+        i{
+          font-size: 2rem;
+          color: white;
+          margin-bottom: 2rem;
+          transition: .3s ease;
+          &:last-child{
+          margin-bottom: 0rem;
+          }
+          &:hover{
+            color: $light-pink-variant;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+            transform: scale(200%);
+            margin: 1.5rem 0;
+          }
         }
       }
     }
@@ -298,6 +329,17 @@ $light-pink-variant: #f7f5dd;
       li {
         font-size: 1.8rem;
         font-weight: lighter;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        transition: .3s ease;
+        &:hover{
+          transform: scale(110%);
+          color: $light-pink-variant;
+          text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+        }
       }
     }
   }
@@ -317,8 +359,10 @@ $light-pink-variant: #f7f5dd;
       text-align: center;
       color: rgba(0, 0, 0, 0.781);
       letter-spacing: 0.1rem;
-      b {
+      a{
+        text-decoration: none;
         color: $hot-pink;
+        font-size: 1.5rem;
       }
     }
   }
@@ -370,6 +414,11 @@ $light-pink-variant: #f7f5dd;
       margin-right: 2rem;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
       border-radius: .5rem;
+      transition: .3s ease;
+
+      &:hover{
+        box-shadow: rgba(255, 0, 106, 0.353) 1.95px 1.95px 2.6px;
+      }
 
       &:last-child {
         margin-right: 0rem;
@@ -426,11 +475,19 @@ $light-pink-variant: #f7f5dd;
     border-radius: 1rem;
     transform: translateX(10%);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-
+    span{
+      color: $hot-pink;
+      font-weight: 500;
+    }
+    p{
+      font-size: 2rem;
+      color: $paragraph-color;
+    }
     b{
       color: $hot-pink;
       font-size: 1.5rem;
       display: block;
+      margin-top: 3rem;
       float: right;
     }
 
@@ -455,6 +512,14 @@ $light-pink-variant: #f7f5dd;
       width: 70%;
       border: 1px solid rgba(0, 0, 0, 0.452);
       border-radius: .5rem;
+      transition: .3s ease;
+      &:focus-visible{
+        box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
+                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+      }
+      &::placeholder{
+        color: $paragraph-color;
+      }
     }
     textarea{
       font-family: inherit;
@@ -466,6 +531,14 @@ $light-pink-variant: #f7f5dd;
       width: 70%;
       border: 1px solid rgba(0, 0, 0, 0.452);
       border-radius: .5rem;
+      resize: none;
+      &:focus-visible{
+        box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
+                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+      }
+      &::placeholder{
+        color: $paragraph-color;
+      }
     }
     button{
       padding: 2rem;
@@ -508,6 +581,52 @@ $light-pink-variant: #f7f5dd;
       width: 85%;
       border: 1px solid rgba(0, 0, 0, 0.452);
       border-radius: .5rem;
+      transition: .3s ease;
+      &:focus-visible{
+        box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
+                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+      }
+      &::placeholder{
+        color: $paragraph-color;
+      }
+    }
+    select{
+      width: 85%;
+      padding: 1rem;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      outline: none;
+      appearance: none;
+      border: 1px solid rgba(0, 0, 0, 0.452);
+      border-radius: .5rem;
+      color: $paragraph-color;
+      transition: .3s ease;
+      &:focus-visible{
+        box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
+                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+      }
+    }
+    .currency_section{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      column-gap: 9rem;
+      select{
+        width: 55%;
+        transition: .3s ease;
+        &:focus-visible{
+          box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
+                                rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+        }
+      }
+      input{
+        width: 55%;
+        transition: .3s ease;
+        &:focus-visible{
+          box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
+                                rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+        }
+      }
     }
   }
   .donate_img{
@@ -534,4 +653,3 @@ $light-pink-variant: #f7f5dd;
     cursor: pointer;
   }
 }
-
