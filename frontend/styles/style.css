@@ -304,6 +304,7 @@ ul, li {
   color: #56555f;
 }
 .contact .form input:focus-visible {
+  border: 1px solid #ed145b;
   box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset, rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
 }
 .contact .form button {
@@ -575,6 +576,7 @@ ul, li {
   transition: 0.3s ease;
 }
 .send_message input:focus-visible {
+  border: 1px solid #ed145b;
   box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset, rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
 }
 .send_message input::-moz-placeholder {
@@ -601,6 +603,7 @@ ul, li {
   resize: none;
 }
 .send_message textarea:focus-visible {
+  border: 1px solid #ed145b;
   box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset, rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
 }
 .send_message textarea::-moz-placeholder {
@@ -662,6 +665,7 @@ ul, li {
   transition: 0.3s ease;
 }
 .donate_here .donate_form input:focus-visible {
+  border: 1px solid #ed145b;
   box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset, rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
 }
 .donate_here .donate_form input::-moz-placeholder {
@@ -688,6 +692,7 @@ ul, li {
   transition: 0.3s ease;
 }
 .donate_here .donate_form select:focus-visible {
+  border: 1px solid hotpink;
   box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset, rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
 }
 .donate_here .donate_form .currency_section {

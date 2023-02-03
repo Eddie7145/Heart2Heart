@@ -240,6 +240,7 @@ $paragraph-color: #56555f;
       transition: .3s ease;
       color: $paragraph-color;
       &:focus-visible{
+        border: 1px solid $hot-pink;
         box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
                               rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
       }
@@ -514,6 +515,7 @@ $paragraph-color: #56555f;
       border-radius: .5rem;
       transition: .3s ease;
       &:focus-visible{
+        border: 1px solid $hot-pink;
         box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
                               rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
       }
@@ -533,6 +535,7 @@ $paragraph-color: #56555f;
       border-radius: .5rem;
       resize: none;
       &:focus-visible{
+        border: 1px solid $hot-pink;
         box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
                               rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
       }
@@ -583,6 +586,7 @@ $paragraph-color: #56555f;
       border-radius: .5rem;
       transition: .3s ease;
       &:focus-visible{
+        border: 1px solid $hot-pink;
         box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
                               rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
       }
@@ -602,6 +606,7 @@ $paragraph-color: #56555f;
       color: $paragraph-color;
       transition: .3s ease;
       &:focus-visible{
+        border: 1px solid $hotpink;
         box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
                               rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
       }
@@ -615,6 +620,7 @@ $paragraph-color: #56555f;
         width: 55%;
         transition: .3s ease;
         &:focus-visible{
+          border: 1px solid $hot-pink;
           box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
                                 rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
         }
@@ -623,6 +629,7 @@ $paragraph-color: #56555f;
         width: 55%;
         transition: .3s ease;
         &:focus-visible{
+          border: 1px solid $hot-pink;
           box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
                                 rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
         }
