@@ -692,7 +692,7 @@ ul, li {
   transition: 0.3s ease;
 }
 .donate_here .donate_form select:focus-visible {
-  border: 1px solid hotpink;
+  border: 1px solid #ed145b;
   box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset, rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
 }
 .donate_here .donate_form .currency_section {
@@ -707,6 +707,7 @@ ul, li {
   transition: 0.3s ease;
 }
 .donate_here .donate_form .currency_section select:focus-visible {
+  border: 1px solid #ed145b;
   box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset, rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
 }
 .donate_here .donate_form .currency_section input {
@@ -714,6 +715,7 @@ ul, li {
   transition: 0.3s ease;
 }
 .donate_here .donate_form .currency_section input:focus-visible {
+  border: 1px solid #ed145b;
   box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset, rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
 }
 .donate_here .donate_img {
