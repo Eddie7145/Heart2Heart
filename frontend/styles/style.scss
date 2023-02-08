@@ -1,11 +1,6 @@
 @import "presets";
 @import "responsive";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-$pink: #f3d7d7;
-$light-pink: #f3dadc;
-$hot-pink: #ed145b;
-$hot-pink-accent: #df4a7b;
-$light-pink-variant: #f7f5dd;
 
 // Home Section
 .header {
@@ -75,8 +70,8 @@ $light-pink-variant: #f7f5dd;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 80vh;
-  padding: 5rem;
+  height: fit-content;
+  padding: 12rem;
   background-color: $light-pink-variant;
   background-image: url(../assets/ribbon.png);
   background-repeat: no-repeat;
@@ -98,7 +93,7 @@ $light-pink-variant: #f7f5dd;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25rem;
+    height: fit-content;
     img {
       height: 100%;
       width: auto;
@@ -110,6 +105,8 @@ $light-pink-variant: #f7f5dd;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+
     h1 {
       color: $hot-pink-accent;
       font-size: 6.5rem;
@@ -132,6 +129,8 @@ $light-pink-variant: #f7f5dd;
   align-items: center;
   h2 {
     font-size: 4rem;
+    padding: 4rem;
+    text-align: center;
     font-weight: bolder;
     color: whitesmoke;
     text-shadow: 1px 1px 10px $hot-pink;
@@ -258,7 +257,6 @@ $light-pink-variant: #f7f5dd;
   display: flex;
   width: 100%;
   flex-direction: column;
- 
 
   .waves {
     display: flex;
@@ -275,16 +273,15 @@ $light-pink-variant: #f7f5dd;
     padding: 4rem;
     padding-bottom: 10rem;
     align-items: center;
-    .socials{
+    .socials {
       display: flex;
       flex-direction: column;
-      i{
+      i {
         font-size: 2rem;
         color: white;
         margin-bottom: 2rem;
-        &:last-child{
-        margin-bottom: 0rem;
-  
+        &:last-child {
+          margin-bottom: 0rem;
         }
       }
     }
@@ -369,7 +366,7 @@ $light-pink-variant: #f7f5dd;
       padding: 4rem;
       margin-right: 2rem;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
 
       &:last-child {
         margin-right: 0rem;
@@ -381,7 +378,7 @@ $light-pink-variant: #f7f5dd;
         border-radius: 50%;
         margin-bottom: 2rem;
         background-image: linear-gradient(180deg, #ed145b, #ff5ca3);
-        padding: .65rem;
+        padding: 0.65rem;
       }
       h2 {
         font-size: 1.8rem;
@@ -400,88 +397,89 @@ $light-pink-variant: #f7f5dd;
 }
 
 // Donate Section
-.quote{
+.quote {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
   padding: 6rem;
   align-items: center;
   margin: 0 auto;
-  .quote_img{
+  .quote_img {
     overflow: hidden;
     width: 40%;
 
-    img{
+    img {
       height: auto;
-      width: 100%;   
+      width: 100%;
       border-radius: 1rem;
-      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;   
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
   }
-  .quote_text{
+  .quote_text {
     width: 60%;
     padding: 4rem;
     background-color: $light-pink-variant;
     height: fit-content;
     border-radius: 1rem;
     transform: translateX(10%);
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
-    b{
+    b {
       color: $hot-pink;
       font-size: 1.5rem;
       display: block;
       float: right;
     }
-
   }
 }
-.send_message{
+.send_message {
   display: flex;
   flex-direction: column;
   align-items: center;
-  h2{
+  h2 {
     font-size: 3.5rem;
     color: $hot-pink;
     font-family: "Raleway";
     margin-bottom: 2rem;
   }
-     input {
-      font-size: 2rem;
-      padding: 1rem;
-      margin-bottom: 2rem;
-      appearance: none;
-      outline: none;
-      width: 70%;
-      border: 1px solid rgba(0, 0, 0, 0.452);
-      border-radius: .5rem;
-    }
-    textarea{
-      font-family: inherit;
-      font-size: 2rem;
-      padding: 1rem;
-      margin-bottom: 2rem;
-      appearance: none;
-      outline: none;
-      width: 70%;
-      border: 1px solid rgba(0, 0, 0, 0.452);
-      border-radius: .5rem;
-    }
-    button{
-      padding: 2rem;
-      color: white;
-      border-radius: 0.5rem;
-      background-color: #ed145b;
-      font-size: 3rem;
-      width: 40%;
-      border: none;
-      outline: none;
-      appearance: none;
-      cursor: pointer;
-      display: block;
-    }
+  input {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    appearance: none;
+    outline: none;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 0.5rem;
+  }
+  textarea {
+    font-family: inherit;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    appearance: none;
+    outline: none;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 0.5rem;
+  }
+  button {
+    padding: 2rem;
+    color: white;
+    border-radius: 0.5rem;
+    background-color: #ed145b;
+    font-size: 3rem;
+    width: 40%;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    display: block;
+  }
 }
-.donate_heading{
+.donate_heading {
   text-align: center;
   font-size: 4rem;
   color: $hot-pink;
@@ -489,11 +487,11 @@ $light-pink-variant: #f7f5dd;
   margin-top: 5rem;
   font-family: "Raleway";
 }
-.donate_here{
+.donate_here {
   display: flex;
   width: 100%;
 
-  .donate_form{
+  .donate_form {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -507,21 +505,21 @@ $light-pink-variant: #f7f5dd;
       outline: none;
       width: 85%;
       border: 1px solid rgba(0, 0, 0, 0.452);
-      border-radius: .5rem;
+      border-radius: 0.5rem;
     }
   }
-  .donate_img{
+  .donate_img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
     padding: 4rem;
-    img{
+    img {
       width: 100%;
       height: auto;
     }
   }
-  button{
+  button {
     padding: 2rem;
     color: white;
     border-radius: 0.5rem;
@@ -534,4 +532,30 @@ $light-pink-variant: #f7f5dd;
     cursor: pointer;
   }
 }
+
+//beatsbydosh
+.beatsbydosh {
+  position: fixed;
+  z-index: 5000;
+  bottom: 2rem;
+  right: 2rem;
+  height: 12rem;
+  width: 12rem;
+  width: auto;
+  animation: rotate 4s linear infinite;
+
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+//hamburger
+.fa-bars{
+  margin-left: auto;
+  font-size: 3rem;
+  color: $hot-pink;
+}
+
 
