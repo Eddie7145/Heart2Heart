@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/asset.png">
     <title>Heart2Heart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
@@ -16,15 +17,17 @@
         <a href="about.html"><li >About</li></a> 
         <a href="#"><li class="active">Donate</li></a> 
       </div>
-      <button class="donate_btn">Donate Here</button>
+      <a href="donate.html"><button class="donate_btn">Donate Here</button></a>
     </div>
     <div class="quote column-sm">
         <div class="quote_img column-sm">
             <img src="./assets/mask.jfif" alt="">
         </div>
-        <div class="quote_text column-sm">
-            <p>Lorem, ipsum dolor incidunt repudiandae quasi, tempora corrupti, officia autem error aut temporibus, quos facere. Vitae, ad recusandae nesciunt sit quam minus! Temporibus vero labore assumenda nemo sequi perspiciatis nesciunt obcaecati qui, earum voluptas harum autem dolor perferendis sint esse quia sunt. Laboriosam minima ex perferendis, corporis quos eaque ipsum, ipsam nisi eius temporibus corrupti et dolorem earum quam magnam, quod voluptatibus! Dolores hic consequatur nesciunt veritatis architecto, molestias itaque! Culpa sint a cumque quidem temporibus ut, dicta nostrum ratione deserunt nulla reprehenderit, ab pariatur voluptatibus! Tempore vero tempora, vitae, quidem, esse quae expedita iste accusantium numquam quis soluta nulla minus quasi quo voluptate? Molestiae, doloribus temporibus.</p>
-            <b>Founder, WAS Foundation</b>
+        <div class="quote_text">
+            <p>"<span>Thank you very much for donating</span> <br>
+              Heart2Heart is a project hosted by the <span>W.A.S Foundation</span> created with the sole purpose of helping people, specifically people we don't know. Our focus with this project is to bring your attention back to the fact that we all need love, we need to be loved and reciprocate to others who have no one to give them. The only question I have for you now is <span>WILL YOU STAND WITH US?</span>"
+            </p>
+            <b>Founder, W.A.S Foundation</b>
         </div>
     </div>
     <div class="send_message">
@@ -39,9 +42,34 @@
         <div class="donate_form">
             <input type="text" name="" id="" placeholder="please enter your full name">
             <input type="text" name="" id="" placeholder="please enter your card number">
-            <input type="text" name="" id="" placeholder="please select your bank">
-            <input type="text" name="" id="" placeholder="please enter amount">
-            <input type="text" name="" id="" placeholder="please enter your validity">
+
+              <select name="bankname" id="donate_select">
+                <option value="_____">please select your bank</option>
+                <option value="AccessDiamondBank">Access Diamond Bank</option>
+                <option value="Ecobank">Ecobank</option>
+                <option value="Accessbank">Access Bank</option>
+                <option value="Sterlingbank">Sterling Bank</option>
+                <option value="GTbank">GTBank</option>
+                <option value="Kuda Bank">Kuda Bank</option>
+                <option value="Ecobank">Ecobank</option>
+                <option value="KeystoneBank">Keystone Bank</option>
+                <option value="FirstBank">First Bank</option>
+              </select>
+
+              <div class="currency_section">
+                <select name="bankname" id="currency">
+                  <option value="_____">please select your currency</option>
+                  <option value="Dollar">USD</option>
+                  <option value="Naira">NGN</option>
+                  <option value="Canadian Dollar">CAD</option>
+                  <option value="Pounds">GBP</option>
+                  <option value="Euro">EUR</option>
+                  <option value="Cedi">Cedis</option>
+
+                  <input type="text" name="" id="" placeholder="please enter amount">
+                </select>
+              </div>
+            <input type="text" name="" id="" placeholder="please enter your CVV">
             <button> Donate 💝  </button>
         </div>
         <div class="donate_img">
@@ -56,24 +84,25 @@
           <img src="./assets/wave2.svg" alt="" />
         </span>
         <div class="footer_content">
+          <img src="assets/H2H-Logo-2.svg" alt="Logo">
           <span class="socials">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-whatsapp"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="far fa-envelope"></i>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
           </span>
           <span class="links">
             <h2>Links</h2>
-            <li>Home</li>
-            <li>About</li>
-            <li>Donate</li>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="donate.html">Donate</a>
           </span>
           <span class="links">
             <h2>Contact</h2>
-            <li>thewasfoundation@gmail.com</li>
-            <li>+2347078536790</li>
-            <li>+2348128907869</li>
+            <a href="#">thewasfoundation@gmail.com</a>
+            <a href="#">+2347078536790</a>
+            <a href="#">+2348128907869</a>
           </span>
           <span class="links">
             <h2>Location</h2>
@@ -86,8 +115,8 @@
           <span>
             <p>All Rights Reserved © 2023</p>
             <p>
-              Brought to you by <br />
-              <b>WAS Foundation</b>
+              Hosted by <br />
+              <a href="#"><b>W.A.S Foundation</b></a>
             </p>
           </span>
         </div>
