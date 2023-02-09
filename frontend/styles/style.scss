@@ -71,8 +71,8 @@ $paragraph-color: #56555f;
     font-size: 1.5rem;
     font-weight: 500;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: .3s ease;
-    &:hover{
+    transition: 0.3s ease;
+    &:hover {
       background-color: $pink;
       color: $hot-pink;
       font-weight: 700;
@@ -136,7 +136,6 @@ $paragraph-color: #56555f;
   display: flex;
   width: 100%;
   height: 45rem;
-  background-color: red;
   background-image: url(../assets/gift.jpg);
   background-size: cover;
   background-position: center;
@@ -241,12 +240,12 @@ $paragraph-color: #56555f;
       width: 70%;
       border: 1px solid rgba(0, 0, 0, 0.452);
       border-radius: 1rem;
-      transition: .3s ease;
+      transition: 0.3s ease;
       color: $paragraph-color;
-      &:focus-visible{
+      &:focus-visible {
         border: 1px solid $hot-pink;
         box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
-                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+          rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
       }
     }
     button {
@@ -296,25 +295,25 @@ $paragraph-color: #56555f;
     padding-bottom: 10rem;
     align-items: center;
     position: relative;
-    img{
+    img {
       position: absolute;
       top: -10rem;
       right: 10rem;
       width: 15rem;
     }
-    .socials{
+    .socials {
       display: flex;
       flex-direction: column;
-      a{
-        i{
+      a {
+        i {
           font-size: 2rem;
           color: white;
           margin-bottom: 2rem;
-          transition: .3s ease;
-          &:last-child{
-          margin-bottom: 0rem;
+          transition: 0.3s ease;
+          &:last-child {
+            margin-bottom: 0rem;
           }
-          &:hover{
+          &:hover {
             color: $light-pink-variant;
             text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
             transform: scale(200%);
@@ -338,8 +337,8 @@ $paragraph-color: #56555f;
         display: block;
         text-decoration: none;
         color: white;
-        transition: .3s ease;
-        &:hover{
+        transition: 0.3s ease;
+        &:hover {
           transform: scale(110%);
           color: $light-pink-variant;
           text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
@@ -363,7 +362,7 @@ $paragraph-color: #56555f;
       text-align: center;
       color: rgba(0, 0, 0, 0.781);
       letter-spacing: 0.1rem;
-      a{
+      a {
         text-decoration: none;
         color: $hot-pink;
         font-size: 1.5rem;
@@ -408,20 +407,25 @@ $paragraph-color: #56555f;
   }
   .team_row {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .team_card {
       display: flex;
       flex-direction: column;
+      width: 45%;
       align-items: center;
       text-align: center;
       padding: 4rem;
+      padding-bottom: 8rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 0.5rem;
+      transition: 0.3s ease;
       margin-right: 2rem;
-      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-      border-radius: .5rem;
-      transition: .3s ease;
-
-      &:hover{
-        box-shadow: rgba(255, 0, 106, 0.353) 1.95px 1.95px 2.6px;
+      margin-bottom: 1rem;
+      
+      &:hover {
+        box-shadow: rgba(255, 0, 106, 0.353) 0px 3px 8px;
       }
 
       &:last-child {
@@ -479,16 +483,17 @@ $paragraph-color: #56555f;
     height: fit-content;
     border-radius: 1rem;
     transform: translateX(10%);
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    span{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    span {
       color: $hot-pink;
       font-weight: 500;
     }
-    p{
+    p {
       font-size: 2rem;
       color: $paragraph-color;
     }
-    b{
+    b {
       color: $hot-pink;
       font-size: 1.5rem;
       display: block;
@@ -507,58 +512,58 @@ $paragraph-color: #56555f;
     font-family: "Raleway";
     margin-bottom: 2rem;
   }
-     input {
-      font-size: 2rem;
-      padding: 1rem;
-      margin-bottom: 2rem;
-      appearance: none;
-      outline: none;
-      width: 70%;
-      border: 1px solid rgba(0, 0, 0, 0.452);
-      border-radius: .5rem;
-      transition: .3s ease;
-      &:focus-visible{
-        border: 1px solid $hot-pink;
-        box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
-                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
-      }
-      &::placeholder{
-        color: $paragraph-color;
-      }
+  input {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    appearance: none;
+    outline: none;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+    &:focus-visible {
+      border: 1px solid $hot-pink;
+      box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
+        rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
     }
-    textarea{
-      font-family: inherit;
-      font-size: 2rem;
-      padding: 1rem;
-      margin-bottom: 2rem;
-      appearance: none;
-      outline: none;
-      width: 70%;
-      border: 1px solid rgba(0, 0, 0, 0.452);
-      border-radius: .5rem;
-      resize: none;
-      &:focus-visible{
-        border: 1px solid $hot-pink;
-        box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
-                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
-      }
-      &::placeholder{
-        color: $paragraph-color;
-      }
+    &::placeholder {
+      color: $paragraph-color;
     }
-    button{
-      padding: 2rem;
-      color: white;
-      border-radius: 0.5rem;
-      background-color: #ed145b;
-      font-size: 3rem;
-      width: 40%;
-      border: none;
-      outline: none;
-      appearance: none;
-      cursor: pointer;
-      display: block;
+  }
+  textarea {
+    font-family: inherit;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    appearance: none;
+    outline: none;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 0.5rem;
+    resize: none;
+    &:focus-visible {
+      border: 1px solid $hot-pink;
+      box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
+        rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
     }
+    &::placeholder {
+      color: $paragraph-color;
+    }
+  }
+  button {
+    padding: 2rem;
+    color: white;
+    border-radius: 0.5rem;
+    background-color: #ed145b;
+    font-size: 3rem;
+    width: 40%;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    display: block;
+  }
 }
 .donate_heading {
   text-align: center;
@@ -586,18 +591,18 @@ $paragraph-color: #56555f;
       outline: none;
       width: 85%;
       border: 1px solid rgba(0, 0, 0, 0.452);
-      border-radius: .5rem;
-      transition: .3s ease;
-      &:focus-visible{
+      border-radius: 0.5rem;
+      transition: 0.3s ease;
+      &:focus-visible {
         border: 1px solid $hot-pink;
         box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
-                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+          rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
       }
-      &::placeholder{
+      &::placeholder {
         color: $paragraph-color;
       }
     }
-    select{
+    select {
       width: 85%;
       padding: 1rem;
       font-size: 2rem;
@@ -605,36 +610,36 @@ $paragraph-color: #56555f;
       outline: none;
       appearance: none;
       border: 1px solid rgba(0, 0, 0, 0.452);
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       color: $paragraph-color;
-      transition: .3s ease;
-      &:focus-visible{
-        border: 1px solid $hotpink;
+      transition: 0.3s ease;
+      &:focus-visible {
+        border: 1px solid $hot-pink;
         box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
-                              rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+          rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
       }
     }
-    .currency_section{
+    .currency_section {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       column-gap: 9rem;
-      select{
+      select {
         width: 55%;
-        transition: .3s ease;
-        &:focus-visible{
+        transition: 0.3s ease;
+        &:focus-visible {
           border: 1px solid $hot-pink;
           box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
-                                rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+            rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
         }
       }
-      input{
+      input {
         width: 55%;
-        transition: .3s ease;
-        &:focus-visible{
+        transition: 0.3s ease;
+        &:focus-visible {
           border: 1px solid $hot-pink;
           box-shadow: rgba(255, 0, 106, 0.555) 2px 2px 1.95px inset,
-                                rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
+            rgba(255, 0, 106, 0.555) -2px -2px 1.95px inset;
         }
       }
     }
@@ -662,4 +667,124 @@ $paragraph-color: #56555f;
     appearance: none;
     cursor: pointer;
   }
+}
+
+//beatsbydosh
+.player {
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 5000;
+  width: fit-content;
+
+  .beatsbydosh {
+    position: relative;
+    height: 12rem;
+    width: 12rem;
+    animation: rotate 4s linear infinite;
+    margin-left: auto;
+    cursor: pointer;
+
+    @keyframes rotate {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+  }
+  .music_text {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: $hot-pink-accent 0px 7px 5px;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transition: ease-in-out .4s;
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+
+    }
+  }
+  .show{
+    opacity: 1 !important;
+  }
+}
+
+//hamburger
+.fa-bars {
+  margin-left: auto;
+  font-size: 3rem;
+  color: $hot-pink;
+}
+
+// menu
+.menu_overlay {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 0vw;
+  background-color: $hot-pink-accent;
+  transition: ease-in-out 0.5s;
+  z-index: 100000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  i {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    font-size: 3rem;
+  }
+  a > li {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 4px $hot-pink;
+    position: relative;
+  }
+  .active {
+    text-shadow: 0px 0px 0px $hot-pink;
+    &::after {
+      position: absolute;
+      content: "💕";
+      top: -1.5rem;
+      right: -4rem;
+    }
+  }
+  .donate_btn {
+    background-color: $hot-pink;
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    font-family: "Poppins";
+    border-radius: 0.5rem;
+    letter-spacing: 0.05em;
+    color: white;
+    min-width: fit-content;
+    font-size: 2rem;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s ease;
+    &:hover {
+      background-color: $pink;
+      color: $hot-pink;
+      font-weight: 700;
+      font-size: 1.5rem;
+      box-shadow: $hot-pink 0px 1px 5px;
+    }
+  }
+}
+.menu_open {
+  height: 100vh;
+  width: 100vw;
 }

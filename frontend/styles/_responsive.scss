@@ -3,6 +3,23 @@
     padding: 8rem !important;
     text-align: center;
   }
+  .w-75{
+    width: 75% !important;
+  }.w-85{
+    width: 85% !important;
+  }
+  .col-0{
+    column-gap: 0px !important;
+  }
+  .w-adjust{
+    width: 40% !important;
+  }
+  .translate-0{
+    transform: translateX(0) !important;
+  }
+  .justify{
+    align-items: center !important;
+  }
 
   .column-sm {
     display: flex !important;

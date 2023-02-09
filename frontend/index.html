@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/asset.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/asset.png" />
     <title>Heart2Heart</title>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link
@@ -17,7 +17,23 @@
     />
   </head>
   <body>
-    <img class="beatsbydosh" src="./assets/dosh.png" alt="" />
+    <!-- menu overlay -->
+    <div id="menu_overlay" class="menu_overlay">
+      <i id="close" class="fa fa-close"></i>
+      <a href="index.html"><li class="active">Home</li></a>
+      <a href="about.html"><li>About</li></a>
+      <a href="donate.html"><li>Donate</li></a>
+      <a href="donate.html">
+        <button class="donate_btn">Donate Here</button>
+      </a>
+    </div>
+    <!-- music player icon -->
+   <span class="player">
+    <img id="player" class="beatsbydosh" src="./assets/dosh.png" alt="" />
+  <div id="song" class="music_text">
+    <p> 🎧 Beautiful People - Ed Sheeran </p>
+  </div></span> 
+    <!-- header -->
     <div class="header">
       <img src="./assets/logo.png" alt="logo" class="brand" />
       <div class="links">
@@ -25,7 +41,11 @@
         <a class="hide-sm" href="about.html"><li>About</li></a>
         <a class="hide-sm" href="donate.html"><li>Donate</li></a>
       </div>
-      <a href="donate.html"><button class="donate_btn">Donate Here</button></a>
+      <a href="donate.html">
+        <button class="donate_btn hide-sm">Donate Here</button>
+      </a>
+      <i id="menu_btn" class="show-sm hide-lg fa fa-bars"></i>
+
     </div>
     <div class="hero column-sm reduce-hero">
       <div class="overlay"></div>
@@ -39,7 +59,7 @@
     <div class="tag_image">
       <h2>What is the essence of Valentine without giving?</h2>
     </div>
-    <div class="quick_question column-sm ">
+    <div class="quick_question column-sm">
       <div class="question text-center p-sm mb-sm">
         <h1><b>Q</b>uick <b>Q</b>uestion</h1>
       </div>
@@ -50,7 +70,7 @@
       </div>
     </div>
     <div class="contact column-sm">
-      <div class="form column-sm">
+      <div class="form column-sm text-center">
         <h2>Feel free to Contact us 😉</h2>
         <input type="text" placeholder="your name" id="name" />
         <input type="text" placeholder="leave a note" id="note" />
@@ -65,9 +85,9 @@
         <img src="./assets/wave.svg" id="overlap" alt="" />
         <img src="./assets/wave2.svg" alt="" />
       </span>
-      <div class="footer_content">
-        <img src="assets/H2H-Logo-2.svg" alt="Logo">
-        <span class="socials">
+      <div class="footer_content column-sm-reverse">
+        <img class="hide-sm" src="assets/H2H-Logo-2.svg" alt="Logo" />
+        <span class="socials row-sm">
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -80,13 +100,13 @@
           <a href="about.html">About</a>
           <a href="donate.html">Donate</a>
         </span>
-        <span class="links">
+        <span class="links mr-auto">
           <h2>Contact</h2>
           <a href="#">thewasfoundation@gmail.com</a>
           <a href="#">+2347078536790</a>
           <a href="#">+2348128907869</a>
         </span>
-        <span class="links">
+        <span class="links mr-auto">
           <h2>Location</h2>
           <li>Lekki Phase Two, 5 Grakka Street, Lagos, Nigeria</li>
           <li>Head Quaters @ Old Aba Road, Port-Harcourt, Nigeria</li>
@@ -103,6 +123,7 @@
         </span>
       </div>
     </div>
+    <!-- add background music -->
     <audio src="./assets/audio.mp3"></audio>
   </body>
   <script src="./script.js"></script>
