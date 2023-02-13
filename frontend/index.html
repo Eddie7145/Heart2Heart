@@ -28,11 +28,12 @@
       </a>
     </div>
     <!-- music player icon -->
-   <span class="player">
-    <img id="player" class="beatsbydosh" src="./assets/dosh.png" alt="" />
-  <div id="song" class="music_text">
-    <p> 🎧 Beautiful People - Ed Sheeran </p>
-  </div></span> 
+    <span class="player">
+      <img id="player" class="beatsbydosh" src="./assets/dosh.png" alt="" />
+      <div id="song" class="music_text">
+        <p>🎧 Beautiful People - Ed Sheeran</p>
+      </div></span
+    >
     <!-- header -->
     <div class="header">
       <img src="./assets/logo.png" alt="logo" class="brand" />
@@ -45,7 +46,6 @@
         <button class="donate_btn hide-sm">Donate Here</button>
       </a>
       <i id="menu_btn" class="show-sm hide-lg fa fa-bars"></i>
-
     </div>
     <div class="hero column-sm reduce-hero">
       <div class="overlay"></div>
@@ -126,5 +126,23 @@
     <!-- add background music -->
     <audio src="./assets/audio.mp3"></audio>
   </body>
+  <!-- main script -->
   <script src="./script.js"></script>
+  <!-- script for typewriter-effect -->
+  <script>
+    var typewriter = new Typewriter(app, {
+      loop: true,
+    });
+
+    typewriter
+      .typeString("Give")
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString("Love")
+      .pauseFor(2500)
+      .deleteChars(7)
+      .typeString("Live!")
+      .pauseFor(2500)
+      .start();
+  </script>
 </html>

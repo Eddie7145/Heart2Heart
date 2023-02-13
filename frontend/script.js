@@ -11,20 +11,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
   audio.play();
 });
 
-var typewriter = new Typewriter(app, {
-  loop: true,
-});
-
-typewriter
-  .typeString("Give")
-  .pauseFor(2500)
-  .deleteAll()
-  .typeString("Love")
-  .pauseFor(2500)
-  .deleteChars(7)
-  .typeString("Live!")
-  .pauseFor(2500)
-  .start();
 
   menu.addEventListener("click", () => {
     overlay.classList.toggle("menu_open")
