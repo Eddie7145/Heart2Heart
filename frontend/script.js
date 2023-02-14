@@ -38,3 +38,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
     song.classList.remove("show")
     })
 });
+
+
+  menu.addEventListener("click", () => {
+    overlay.classList.toggle("menu_open")
+  })
+close.addEventListener("click", () => {
+    overlay.classList.toggle("menu_open")
+})
+music_player.addEventListener("mouseover", () => {
+  song.classList.add("show")
+  })
+  music_player.addEventListener("mouseout", () => {
+  song.classList.remove("show")
+  })

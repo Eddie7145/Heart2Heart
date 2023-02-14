@@ -36,6 +36,52 @@
     <img id="player" class="beatsbydosh" src="./assets/dosh.png" alt="" />
     <div id="song" class="music_text">
       <p> 🎧 Beautiful People - Ed Sheeran </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/asset.png" />
+    <title>Heart2Heart</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- menu overlay -->
+    <div id="menu_overlay" class="menu_overlay">
+      <i id="close" class="fa fa-close"></i>
+      <a href="index.html"><li class="active">Home</li></a>
+      <a href="about.html"><li>About</li></a>
+      <a href="donate.html"><li>Donate</li></a>
+      <a href="donate.html">
+        <button class="donate_btn">Donate Here</button>
+      </a>
+    </div>
+    <!-- music player icon -->
+    <span class="player">
+      <img id="player" class="beatsbydosh" src="./assets/dosh.png" alt="" />
+      <div id="song" class="music_text">
+        <p>🎧 Beautiful People - Ed Sheeran</p>
+      </div></span
+    >
+    <!-- header -->
+    <div class="header">
+      <img src="./assets/logo.png" alt="logo" class="brand" />
+      <div class="links">
+        <a class="hide-sm" href="#"><li class="active">Home</li></a>
+        <a class="hide-sm" href="about.html"><li>About</li></a>
+        <a class="hide-sm" href="donate.html"><li>Donate</li></a>
+      </div>
+      <a href="donate.html">
+        <button class="donate_btn hide-sm">Donate Here</button>
+      </a>
+      <i id="menu_btn" class="show-sm hide-lg fa fa-bars"></i>
     </div>
   </span>
   <!-- header -->
@@ -138,4 +184,27 @@
   <audio src="./assets/DOSHKID - WAITING .m4a"></audio>
   <script src="./script.js"></script>
 </body>
+</html>
+    <!-- add background music -->
+    <audio src="./assets/audio.mp3"></audio>
+  </body>
+  <!-- main script -->
+  <script src="./script.js"></script>
+  <!-- script for typewriter-effect -->
+  <script>
+    var typewriter = new Typewriter(app, {
+      loop: true,
+    });
+
+    typewriter
+      .typeString("Give")
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString("Love")
+      .pauseFor(2500)
+      .deleteChars(7)
+      .typeString("Live!")
+      .pauseFor(2500)
+      .start();
+  </script>
 </html>
