@@ -7,9 +7,10 @@ const song = document.getElementById("song");
 
 window.addEventListener("DOMContentLoaded", (event) => {
   const audio = document.querySelector("audio");
-  audio.volume = 0.25;
+  audio.volume = 0.5;
   audio.play();
 
+  // script for typewriter-effect //
   var typewriter = new Typewriter(app, {
     loop: true,
   });
@@ -24,31 +25,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
     .typeString("Live!")
     .pauseFor(2500)
     .start();
-  
-    menu.addEventListener("click", () => {
-      overlay.classList.toggle("menu_open")
-    })
-  close.addEventListener("click", () => {
-      overlay.classList.toggle("menu_open")
-  })
-  music_player.addEventListener("mouseover", () => {
-    song.classList.add("show")
-    })
-    music_player.addEventListener("mouseout", () => {
-    song.classList.remove("show")
-    })
 });
 
-
-  menu.addEventListener("click", () => {
-    overlay.classList.toggle("menu_open")
-  })
+menu.addEventListener("click", () => {
+  overlay.classList.toggle("menu_open")
+})
 close.addEventListener("click", () => {
-    overlay.classList.toggle("menu_open")
+  overlay.classList.toggle("menu_open")
 })
 music_player.addEventListener("mouseover", () => {
-  song.classList.add("show")
-  })
-  music_player.addEventListener("mouseout", () => {
-  song.classList.remove("show")
-  })
+song.classList.add("show")
+})
+music_player.addEventListener("mouseout", () => {
+song.classList.remove("show")
+})
