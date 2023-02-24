@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/asset.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/asset.png" />
+    <script defer src="/_vercel/insights/script.js"></script>
     <title>Heart2Heart</title>
     <link
       rel="stylesheet"
@@ -16,46 +17,77 @@
     />
   </head>
   <body>
+        <!-- menu overlay -->
+        <div id="menu_overlay" class="menu_overlay">
+          <i id="close" class="fa fa-close"></i>
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li class="active">About</li></a>
+          <a href="donate.html"><li>Donate</li></a>
+          <a href="donate.html">
+            <button class="donate_btn">Donate Here</button>
+          </a>
+        </div>
+        <!-- music player icon -->
+       <span class="player">
+        <img id="player" class="beatsbydosh" src="./assets/dosh.png" alt="" />
+      <div id="song" class="music_text">
+        <p> 🎧 Waiting - Doshkid </p>
+      </div></span> 
     <div class="header">
       <img src="./assets/logo.png" alt="logo" class="brand" />
       <div class="links">
-        <a href="index.html"><li>Home</li></a>
-        <a href="#"><li class="active">About</li></a>
-        <a href="donate.html"><li>Donate</li></a>
+        <a class="hide-sm" href="index.html"><li>Home</li></a>
+        <a class="hide-sm" href="#"><li class="active">About</li></a>
+        <a class="hide-sm" href="donate.html"><li>Donate</li></a>
       </div>
-      <a href="donate.html"><button class="donate_btn">Donate Here</button></a>
+      <a href="donate.html">
+        <button class="donate_btn hide-sm">Donate Here</button>
+      </a>
+      <i id="menu_btn" class="show-sm hide-lg fa fa-bars"></i>
     </div>
-    <div class="video_intro">
+
+    <div class="video_intro text-center">
       <h2>What we do at Heart2Heart</h2>
-      <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-      </iframe>
+      <iframe class="video" src="https://www.veed.io/embed/cdba7d83-8c4e-44c6-bd7c-07faa9495fe6" width="744" height="504" frameborder="0" title="W.A.S Promo Video w Subtitle" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="meet_team">
       <h2 class="heading">Meet The Team</h2>
-      <div class="team_row">
-        <div class="team_card">
-          <img src="./assets/mask.jfif" alt="" />
-          <h2>Team Leader</h2>
-          <h3>James Jenkins</h3>
-          <p>If you fail to plan, you've planned to fail</p>
+      <div class="team_row column-sm justify">
+        <div class="team_card w-85  mb-sm m-0">
+          <img src="./assets/edward.jpg" alt="" />
+          <h2> Project Manager</h2>
+          <h3>Adindu Chizitere A.</h3>
+          <p>"The biggest achivements today, are made by the smallest decisions of yesterday"</p>
         </div>
-        <div class="team_card">
-          <img src="./assets/mask.jfif" alt="" />
-          <h2>Team Leader</h2>
-          <h3>James Jenkins</h3>
-          <p>If you fail to plan, you've planned to fail</p>
+        <div class="team_card w-85 mb-sm m-0">
+          <img src="./assets/caleb (2).jpg" alt="" />
+          <h2>Lead Marketer</h2>
+          <h3>Akpomughe Caleb</h3>
+          <p>"Seeth a man diligent in his work, he will stand before kings and not mere men"</p>
         </div>
-        <div class="team_card">
-          <img src="./assets/mask.jfif" alt="" />
-          <h2>Team Leader</h2>
-          <h3>James Jenkins</h3>
-          <p>If you fail to plan, you've planned to fail</p>
+        <div class="team_card w-85 mb-sm m-0">
+          <img src="./assets/victor.jpg" alt="" />
+          <h2>Frontend Developer</h2>
+          <h3>Iloenyenwa Victor</h3>
+          <p>"A chance of one in a million times becomes more likely when you try a million times"</p>
         </div>
-        <div class="team_card">
-          <img src="./assets/mask.jfif" alt="" />
-          <h2>Team Leader</h2>
-          <h3>James Jenkins</h3>
-          <p>If you fail to plan, you've planned to fail</p>
+        <div class="team_card w-85 mb-sm m-0">
+          <img src="./assets/goodman.jpg" alt="" />
+          <h2>Content Editor</h2>
+          <h3>Goodman Ikechi</h3>
+          <p>"Success is directly proportional to hard work, provided prayer is constant"</p>
+        </div>
+        <div class="team_card w-85 mb-sm m-0">
+          <img src="./assets/wisdom.jpg" alt="" />
+          <h2>Lead Designer</h2>
+          <h3>Chima-Ndieze Wisdom</h3>
+          <p>"Success is not just only the product of hardwork, but of consistency, determination and boldness"</p>
+        </div>
+        <div class="team_card w-85 mb-sm m-0">
+          <img src="./assets/joseph.jpg" alt="" />
+          <h2>Backend Developer</h2>
+          <h3>Onwukwe Joseph</h3>
+          <p>"The journey of a thousand miles all begins with a single bold step, but the fear of taking that bold step hinders us from suceeding"</p>
         </div>
       </div>
     </div>
@@ -64,43 +96,46 @@
         <img src="./assets/wave.svg" id="overlap" alt="" />
         <img src="./assets/wave2.svg" alt="" />
       </span>
-      <div class="footer_content">
-        <img src="assets/H2H-Logo-2.svg" alt="Logo">
-        <span class="socials">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="far fa-envelope"></i></a>
+      <div class="footer_content column-sm-reverse">
+        <img class="hide-sm" src="assets/H2H-Logo-2.svg" alt="Logo" />
+        <span class="socials row-sm">
+          <a href="https://www.instagram.com/whataboutusorg/"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/whataboutusorg"><i class="fab fa-twitter"></i></a>
+          <a href="https://wa.me/+2347062776278"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100089967054478"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.youtube.com/channel/UCO9DkNWMiSjHchSSqTgJ7tw"><i class="fab fa-youtube"></i></a>
         </span>
-        <span class="links">
+        <span class="links mr-auto mb-sm">
           <h2>Links</h2>
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="donate.html">Donate</a>
         </span>
-        <span class="links">
+        <span class="links mr-auto">
           <h2>Contact</h2>
-          <a href="#">thewasfoundation@gmail.com</a>
-          <a href="#">+2347078536790</a>
-          <a href="#">+2348128907869</a>
+          <a href="#">foundationwhataboutus@gmail.com</a>
+          <a href="#">+2347062776278</a>
+          <a href="#">+2349024447931</a>
         </span>
-        <span class="links">
+        <span class="links mr-auto">
           <h2>Location</h2>
-          <li>Lekki Phase Two, 5 Grakka Street, Lagos, Nigeria</li>
-          <li>Head Quaters @ Old Aba Road, Port-Harcourt, Nigeria</li>
+          <li>Port Harcourt, Rivers State, Nigeria</li>
+          <li>Obinze, Owerri, Imo State, Nigeria</li>
         </span>
       </div>
-      <div class="footer_credit">
-        <img src="./assets/logo.png" alt="" />
-        <span>
+      <div class="footer_credit column-sm h-adjust">
+        <img class="mb-xs" src="./assets/logo.png" alt="" />
+        <span class="mb-xs">
           <p>All Rights Reserved © 2023</p>
           <p>
             Hosted by <br />
-            <a href="#"><b>W.A.S Foundation</b></a>
+            <a href="https://whataboutusfoundation.vercel.app"><b>W.A.S Foundation</b></a>
           </p>
         </span>
       </div>
     </div>
+   <!-- add background music -->
+   <audio src="./assets/DOSHKID - WAITING .m4a"></audio>
   </body>
+  <script src="./script.js"></script>
 </html>
