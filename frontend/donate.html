@@ -5,121 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/asset.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/asset.png" />
     <title>Heart2Heart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
   </head>
   <body>
     <div class="header">
       <img src="./assets/logo.png" alt="logo" class="brand" />
       <div class="links">
-        <a href="index.html"><li  >Home</li></a> 
-        <a href="about.html"><li >About</li></a> 
-        <a href="#"><li class="active">Donate</li></a> 
+        <a href="index.html"><li>Home</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="#"><li class="active">Donate</li></a>
       </div>
       <a href="donate.html"><button class="donate_btn">Donate Here</button></a>
     </div>
     <div class="quote">
-        <div class="quote_img">
-            <img src="./assets/mask.jfif" alt="">
-        </div>
-        <div class="quote_text">
-            <p>"<span>Thank you very much for donating</span> <br>
-              Heart2Heart is a project hosted by the <span>W.A.S Foundation</span> created with the sole purpose of helping people, specifically people we don't know. Our focus with this project is to bring your attention back to the fact that we all need love, we need to be loved and reciprocate to others who have no one to give them. The only question I have for you now is <span>WILL YOU STAND WITH US?</span>"
-            </p>
-            <b>Founder, W.A.S Foundation</b>
-        </div>
+      <div class="quote_img">
+        <img src="./assets/mask.jfif" alt="" />
+      </div>
+      <div class="quote_text">
+        <p>
+          "<span>Thank you very much for donating</span> <br />
+          Heart2Heart is a project hosted by the
+          <span>W.A.S Foundation</span> created with the sole purpose of helping
+          people, specifically people we don't know. Our focus with this project
+          is to bring your attention back to the fact that we all need love, we
+          need to be loved and reciprocate to others who have no one to give
+          them. The only question I have for you now is
+          <span>WILL YOU STAND WITH US?</span>"
+        </p>
+        <b>Founder, W.A.S Foundation</b>
+      </div>
     </div>
     <div class="send_message">
-        <h2>Send Message to Loved One 🌹</h2>
-        <input type="text" name="" placeholder="your full name">
-        <input type="text" name="" placeholder="recipient phone number or email">
-        <textarea name="" id="" cols="30" rows="10" placeholder="what's your message? 😘"></textarea>
-        <button> Send Message 💌</button>
+      <h2>Send Message to Loved One 🌹</h2>
+      <input type="text" name="" placeholder="your full name" />
+      <input
+        type="text"
+        name=""
+        placeholder="recipient phone number or email"
+      />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="what's your message? 😘"
+      ></textarea>
+      <button>Send Message 💌</button>
     </div>
     <h2 class="donate_heading">Make a Donation</h2>
     <div class="donate_here">
-        <div class="donate_form">
-            <input type="text" name="" id="" placeholder="please enter your full name">
-            <input type="text" name="" id="" placeholder="please enter your card number">
+      <div class="donate_form" >
+        <input
+          type="text"
+          name="email"
+          id=""
+          placeholder="Email"
+          onchange="(e) => updateDetails(e)"
+        />
+        <input
+          type="text"
+          name="full_name"
+          id=""
+          placeholder="Full name"
+        />
+    
 
-              <select name="bankname" id="donate_select">
-                <option value="_____">please select your bank</option>
-                <option value="AccessDiamondBank">Access Diamond Bank</option>
-                <option value="Ecobank">Ecobank</option>
-                <option value="Accessbank">Access Bank</option>
-                <option value="Sterlingbank">Sterling Bank</option>
-                <option value="GTbank">GTBank</option>
-                <option value="Kuda Bank">Kuda Bank</option>
-                <option value="Ecobank">Ecobank</option>
-                <option value="KeystoneBank">Keystone Bank</option>
-                <option value="FirstBank">First Bank</option>
-              </select>
+        <!-- <select name="bankname" id="donate_select">
+          <option value="_____">please select your bank</option>
+          <option value="AccessDiamondBank">Access Diamond Bank</option>
+          <option value="Ecobank">Ecobank</option>
+          <option value="Accessbank">Access Bank</option>
+          <option value="Sterlingbank">Sterling Bank</option>
+          <option value="GTbank">GTBank</option>
+          <option value="Kuda Bank">Kuda Bank</option>
+          <option value="Ecobank">Ecobank</option>
+          <option value="KeystoneBank">Keystone Bank</option>
+          <option value="FirstBank">First Bank</option>
+        </select> -->
 
-              <div class="currency_section">
-                <select name="bankname" id="currency">
-                  <option value="_____">please select your currency</option>
-                  <option value="Dollar">USD</option>
-                  <option value="Naira">NGN</option>
-                  <option value="Canadian Dollar">CAD</option>
-                  <option value="Pounds">GBP</option>
-                  <option value="Euro">EUR</option>
-                  <option value="Cedi">Cedis</option>
+        <!-- <div class="currency_section">
+          <select name="bankname" id="currency">
+            <option value="_____">please select your currency</option>
+            <option value="Dollar">USD</option>
+            <option value="Naira">NGN</option>
+            <option value="Canadian Dollar">CAD</option>
+            <option value="Pounds">GBP</option>
+            <option value="Euro">EUR</option>
+            <option value="Cedi">Cedis</option>
 
-                  <input type="text" name="" id="" placeholder="please enter amount">
-                </select>
-              </div>
-            <input type="text" name="" id="" placeholder="please enter your CVV">
-            <button> Donate 💝  </button>
-        </div>
-        <div class="donate_img">
-            <img src="./assets/donate.svg" alt="">
-        </div>
+          </select>
+        </div> -->
+        <input
+          type="text"
+          name="amount"
+          id=""
+          placeholder="Amount"
+        />
+        <input
+          type="text"
+          name="phone_number"
+          id=""
+          placeholder="Phone number"
+        />
+        <!-- <input type="text" name="" id="" placeholder="please enter your CVV" /> -->
+        <button onclick="makePayment()">Donate 💝</button>
+      </div>
+      <div class="donate_img">
+        <img src="./assets/donate.svg" alt="" />
+      </div>
     </div>
-   
 
     <div class="footer">
-        <span class="waves">
-          <img src="./assets/wave.svg" id="overlap" alt="" />
-          <img src="./assets/wave2.svg" alt="" />
+      <span class="waves">
+        <img src="./assets/wave.svg" id="overlap" alt="" />
+        <img src="./assets/wave2.svg" alt="" />
+      </span>
+      <div class="footer_content">
+        <img src="assets/H2H-Logo-2.svg" alt="Logo" />
+        <span class="socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="far fa-envelope"></i></a>
         </span>
-        <div class="footer_content">
-          <img src="assets/H2H-Logo-2.svg" alt="Logo">
-          <span class="socials">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-          </span>
-          <span class="links">
-            <h2>Links</h2>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="donate.html">Donate</a>
-          </span>
-          <span class="links">
-            <h2>Contact</h2>
-            <a href="#">thewasfoundation@gmail.com</a>
-            <a href="#">+2347078536790</a>
-            <a href="#">+2348128907869</a>
-          </span>
-          <span class="links">
-            <h2>Location</h2>
-            <li>Lekki Phase Two, 5 Grakka Street, Lagos, Nigeria</li>
-            <li>Head Quaters @ Old Aba Road, Port-Harcourt, Nigeria</li>
-          </span>
-        </div>
-        <div class="footer_credit">
-          <img src="./assets/logo.png" alt="" />
-          <span>
-            <p>All Rights Reserved © 2023</p>
-            <p>
-              Hosted by <br />
-              <a href="#"><b>W.A.S Foundation</b></a>
-            </p>
-          </span>
-        </div>
+        <span class="links">
+          <h2>Links</h2>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="donate.html">Donate</a>
+        </span>
+        <span class="links">
+          <h2>Contact</h2>
+          <a href="#">thewasfoundation@gmail.com</a>
+          <a href="#">+2347078536790</a>
+          <a href="#">+2348128907869</a>
+        </span>
+        <span class="links">
+          <h2>Location</h2>
+          <li>Lekki Phase Two, 5 Grakka Street, Lagos, Nigeria</li>
+          <li>Head Quaters @ Old Aba Road, Port-Harcourt, Nigeria</li>
+        </span>
       </div>
+      <div class="footer_credit">
+        <img src="./assets/logo.png" alt="" />
+        <span>
+          <p>All Rights Reserved © 2023</p>
+          <p>
+            Hosted by <br />
+            <a href="#"><b>W.A.S Foundation</b></a>
+          </p>
+        </span>
+      </div>
+    </div>
+    <script src="payment.js"></script>
   </body>
 </html>
